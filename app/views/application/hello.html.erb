@@ -1,0 +1,19 @@
+<h1>Welcome to Ruby Observability Sandbox</h1>
+
+<button onclick="getJoke()">Get a Joke</button>
+
+<p id="jokeText"></p>
+
+<script>
+  function getJoke() {
+    fetch("/joke")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("jokeText").innerText = `${data.setup} — ${data.punchline}`;
+      })
+      .catch(err => {
+        document.getElementById("jokeText").innerText = "Failed to load joke 😢";
+        console.error("Error fetching joke:", err);
+      });
+  }
+</script>
