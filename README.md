@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is intended to practice OTel instrumentation on a Ruby on Rails web application. The app is configured to easily be run as a monolith (no containers) or as a standalone docker container. It is not configured to run in Kubernetes, although this shouldn't be too hard to do if you'd like.
 
-Things you may want to cover:
+This project is a work-in-progress and will soon be enhanced with scripts to deploy the Observe Agent, etc.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Enjoy!
